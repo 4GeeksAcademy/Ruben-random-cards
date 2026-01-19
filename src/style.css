@@ -1,5 +1,131 @@
 @import "bootstrap/dist/css/bootstrap.min.css";
 
-body{
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: green;
+}
+
+.container {
+    text-align: center;
+}
+
+h1, h2, p{
+    color: white;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+.card {
+    width: 200px;
+    height: 300px;
     background: white;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    margin: 30px auto;
+    padding: 20px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.xs{
+    width: 150px;
+    height: 225px;
+    border-radius: 5px;
+    padding: 0 15px;
+}
+
+.top-suit {
+    font-size: 50px;
+    text-align: left;
+}
+
+.xs .top-suit{
+    font-size: 37px;
+}
+
+.xs .bottom-suit{
+    font-size: 37px;
+}
+
+.number {
+    font-size: 80px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.bottom-suit {
+    font-size: 50px;
+    text-align: left;
+    transform: rotate(180deg);
+}
+
+
+button {
+    background: #3498db;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 25px;
+    cursor: pointer;
+    margin: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+#btnAuto {
+    background: #2ecc71;
+}
+
+#btnStop {
+    background: #e74c3c;
+}
+
+#btnClear {
+    background: #f539ad;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 7px 20px rgba(0, 0, 0, 0.3);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+#btnGenerate:active{
+    background: #20618d;
+}
+
+#btnAuto:active{
+    background: #1b7a43;
+}
+
+#btnStop:active{
+    background: #9e362a;
+}
+
+#btnClear:active{
+    background: #a02471;
+}
+
+.red{
+    color: #f00;
+}
+
+.black{
+    color: #000;
 }
